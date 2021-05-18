@@ -1,0 +1,5 @@
+<ul *ngIf="invoices$ | async as invoices">
+  <li *ngFor="let invoice of invoices">
+    <a style="cursor: pointer;" (click)="onClick(invoice)">{{ invoice.name }}</a>
+  </li>
+</ul>
